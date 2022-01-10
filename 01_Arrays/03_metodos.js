@@ -21,4 +21,6 @@ const myFilter = numbers.filter(isEven); // cria outro array com cada número do
 console.log(myMap);
 console.log(myFilter);
 
-
+// reduce
+const reducer = (previous, current) => previous + current; // função para somar valor anterior com valor atual;
+console.log(numbers.reduce(reducer)); // método reduce recebe 
