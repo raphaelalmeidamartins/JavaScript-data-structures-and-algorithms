@@ -24,3 +24,16 @@ console.log(myFilter);
 // reduce
 const reducer = (previous, current) => previous + current; // função para somar valor anterior com valor atual;
 console.log(numbers.reduce(reducer)); // método reduce recebe 
+
+// for...of
+for (const number of numbers) {
+  console.log(number);
+}
+
+// iterator
+let iterator = numbers[Symbol.iterator]();
+numbers.forEach(() => console.log(iterator.next().value)); // não entendi a utilidade, mas taí
+
+// entries
+let aEntries = numbers.entries();
+numbers.forEach(() => console.log(aEntries.next().value));
